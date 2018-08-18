@@ -1,0 +1,275 @@
+// Basic
+html {
+  box-sizing: content-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+// All documents BackGround, Font-Family - font-family: 'Open Sans', sans-serif;
+.body {
+  background-image: '-moz-linear-gradient'
+    (-90deg, rgb(56, 179, 191) 0%, rgb(22, 149, 163) 100%);
+  background-image: '-webkit-linear-gradient'
+    (-90deg, rgb(56, 179, 191) 0%, rgb(22, 149, 163) 100%);
+  background-image: '-ms-linear-gradient'
+    (-90deg, rgb(56, 179, 191) 0%, rgb(22, 149, 163) 100%);
+  background-image: linear-gradient(rgb(56, 179, 191), rgb(22, 149, 163));
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Open Sans', sans-serif;
+  min-width: 100vw;
+  padding-bottom: 146px;
+  padding-top: 122px;
+  position: relative;
+
+  @include respond-between(tab, lapt) {
+    padding-bottom: 100px;
+    padding-top: 60px;
+  }
+
+  @include respond-between(land, tab) {
+    padding-bottom: 40px;
+    padding-top: 30px;
+  }
+
+  @include respond-between(mob, land) {
+    padding-bottom: 30px;
+    padding-top: 26px;
+  }
+}
+
+// Main Styles
+.gallery {
+  &__header {
+    margin-bottom: 104px;
+    text-align: center;
+
+    @include respond-between(tab, lapt) {
+      margin-bottom: 70px;
+    }
+
+    @include respond-between(land, tab) {
+      margin-bottom: 60px;
+    }
+
+    @include respond-between(mob, land) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__title {
+    color: $color-text-light-green;
+    font-size: 72px;
+    line-height: 1.2;
+    margin: 0;
+    margin-bottom: 80px;
+
+    @include respond-between(tab, lapt) {
+      font-size: 62px;
+      margin-bottom: 50px;
+    }
+
+    @include respond-between(land, tab) {
+      font-size: 52px;
+      margin-bottom: 40px;
+    }
+
+    @include respond-between(mob, land) {
+      font-size: 44px;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__descr {
+    color: $color-text-light-green;
+    font-size: 24px;
+    line-height: 1.5;
+    margin: auto;
+    max-width: 850px;
+
+    @include respond-between(tab, lapt) {
+      font-size: 20px;
+      max-width: 700px;
+    }
+
+    @include respond-between(land, tab) {
+      font-size: 18px;
+      max-width: 560px;
+    }
+
+    @include respond-between(mob, land) {
+      font-size: 14px;
+      max-width: 318px;
+    }
+  }
+
+  &__list {
+    align-items: center;
+    display: grid;
+    grid-gap: 200px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+
+    @include respond-between(lapt, desk) {
+      grid-gap: 150px;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+    }
+
+    @include respond-between(tab, lapt) {
+      grid-gap: 70px;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+    }
+
+    @include respond-between(land, tab) {
+      grid-gap: 40px;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+    }
+
+    @include respond-between(mob, land) {
+      grid-gap: 40px;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+    }
+
+    &--reset {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+// Images & Wrapped figure for image
+.card {
+  margin: 0 auto;
+
+  &__wrap {
+    &--circle {
+      background-color: $color-no-image;
+      border-color: $color-text-light-green;
+      border-radius: 50%;
+      border-style: solid;
+      border-width: 1px;
+      height: 700px;
+      overflow: hidden;
+      width: 700px;
+
+      @include respond-between(land, tab) {
+        height: 560px;
+        width: 560px;
+      }
+
+      @include respond-between(mob, land) {
+        height: 320px;
+        width: 320px;
+      }
+    }
+
+    &--rectangle {
+      background-color: $color-no-image;
+      border-color: $color-text-light-green;
+      border-style: solid;
+      border-width: 1px;
+      height: 500px;
+      overflow: hidden;
+      width: 700px;
+
+      @include respond-between(land, tab) {
+        height: 360px;
+        width: 560px;
+      }
+
+      @include respond-between(mob, land) {
+        height: 210px;
+        width: 320px;
+      }
+    }
+
+    &--square {
+      background-color: $color-no-image;
+      border-color: $color-text-light-green;
+      border-style: solid;
+      border-width: 1px;
+      height: 700px;
+      overflow: hidden;
+      width: 700px;
+
+      @include respond-between(land, tab) {
+        height: 560px;
+        width: 560px;
+      }
+
+      @include respond-between(mob, land) {
+        height: 320px;
+        width: 320px;
+      }
+    }
+
+    &--triangle {
+      background-color: $color-no-image;
+      border-color: $color-text-light-green;
+      border-style: solid;
+      border-width: 1px;
+      clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+      height: 606px;
+      overflow: hidden;
+      width: 700px;
+
+      @include respond-between(land, tab) {
+        height: 466px;
+        width: 560px;
+      }
+
+      @include respond-between(mob, land) {
+        height: 226px;
+        width: 320px;
+      }
+    }
+  }
+
+  &__image {
+    &--circle {
+      transform: scale(2.2);
+    }
+
+    &--rectangle {
+      height: 504px;
+    }
+
+    &--square {
+      height: 704px;
+      width: 704px;
+    }
+
+    &--triangle {
+      transform: scale(2.2);
+    }
+  }
+}
+
+.btn {
+  background-color: transparent;
+  border: 0;
+  outline: none;
+
+  &--close {
+    background-image: url('../img/Close.png');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
