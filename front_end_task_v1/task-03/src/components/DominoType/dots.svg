@@ -1,0 +1,20 @@
+<svg preserveAspectRatio="xMidYMid meet" style="zoom:1" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="dot-1" viewBox="0 0 100 100">
+    <g fill="#000" stroke="#000" stroke-width="3">
+      <circle cx="462" cy="101" id="circle2" r="10"/>
+      <circle cx="10" cy="10" id="circle1" r="10"/>
+    </g>
+  </symbol>
+  <circle cx="424" cy="99" fill="#000" id="circle3" r="10" stroke="#000" stroke-width="3"/>
+  <circle cx="466" cy="55" fill="#000" id="circle4" r="10" stroke="#000" stroke-width="3"/>
+  <circle cx="425" cy="151" fill="#000" id="circle6" r="10" stroke="#000" stroke-width="3"/>
+  <circle cx="462" cy="148" fill="#000" id="circle7" r="10" stroke="#000" stroke-width="3"/>
+  <symbol id="symbol1" viewBox="0 0 100 100">
+    <g id="g1">
+      <path d="M100 100.2l200 .3-100 199.8z" fill="red" id="path1" stroke="#00f" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="5"/>
+      <circle cx="423" cy="53" fill="#000" id="circle5" r="10" stroke="#000" stroke-width="3"/>
+    </g>
+  </symbol>
+  <path d="M334.3 126.4c-6 23.3-31.7 37.8-56.3 31.9-26.5-5.8-42.3-29.2-36.3-52.7 6-23.3 31.7-37.4 57.2-31.9 25.6 5.8 41.4 29.6 35.4 52.7" fill="#bf4040"/>
+  <path d="M88 111.2l129-79.8" fill="#bb3e3e"/>
+</svg>
